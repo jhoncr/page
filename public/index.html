@@ -147,12 +147,13 @@
                 margin: 0; 
                 box-shadow: none; 
                 border: none; 
+                overflow: visible;
             }
 
             /* Force Grid Layout */
             .content-grid {
                 display: grid !important;
-                grid-template-columns: 70% 30% !important;
+                grid-template-columns: 6.5fr 3.5fr !important;
                 gap: 20px;
             }
 
@@ -183,7 +184,11 @@
 
             /* Main Column & Sidebar */
             .main-column { padding: 0 15px 0 0; border-right: 1px solid #eee; }
-            .sidebar { padding: 0 0 0 10px; background-color: transparent; }
+            .sidebar { 
+                padding: 0 0 0 10px; 
+                background-color: transparent;
+                overflow-wrap: break-word;
+            }
 
             /* Jobs & Lists */
             .job { margin-bottom: 10px; }
